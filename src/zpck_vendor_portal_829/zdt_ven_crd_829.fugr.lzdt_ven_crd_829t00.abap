@@ -1,0 +1,15 @@
+*---------------------------------------------------------------------*
+*    view related data declarations
+*---------------------------------------------------------------------*
+*...processing: ZDT_VEN_CRD_829.................................*
+DATA:  BEGIN OF STATUS_ZDT_VEN_CRD_829               .   "state vector
+         INCLUDE STRUCTURE VIMSTATUS.
+DATA:  END OF STATUS_ZDT_VEN_CRD_829               .
+CONTROLS: TCTRL_ZDT_VEN_CRD_829
+            TYPE TABLEVIEW USING SCREEN '0001'.
+*.........table declarations:.................................*
+TABLES: *ZDT_VEN_CRD_829               .
+TABLES: ZDT_VEN_CRD_829                .
+
+* general table data declarations..............
+  INCLUDE LSVIMTDT                                .
